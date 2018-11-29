@@ -19,6 +19,8 @@ import static org.hamcrest.CoreMatchers.is;
 /**
  * Just pure rest-assured tests
  */
+// This is a test
+
 public class PetTests {
 
 
