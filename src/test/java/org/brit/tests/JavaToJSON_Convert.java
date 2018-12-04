@@ -48,13 +48,13 @@ public class JavaToJSON_Convert extends Resources {
         Resources staff = new Resources();
 
         staff.setName("Glarester");
-        staff.setAge(30);
-        staff.setPosition("Amateur_Automator");
-        staff.setSalary(new BigDecimal("7500"));
+        staff.setId(30);
+        staff.setPosition("PetCareOwner");
+        staff.setExperience(new BigDecimal("7500"));
 
         List<String> skills = new ArrayList<>();
-        skills.add("java");
-        skills.add("jackson");
+        skills.add("train");
+        skills.add("discipline");
 
         staff.setSkills(skills);
 
