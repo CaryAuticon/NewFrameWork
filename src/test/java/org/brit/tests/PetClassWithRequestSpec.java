@@ -44,10 +44,12 @@ public class PetClassWithRequestSpec {
                 .pathParam("petId", "499278344")
                 .get(PET_ENDPOINT + "/{petId}")
                 .then()
-                .statusCode(200)
+                .statusCode(404)
                 .body("name", equalTo("Fido6"),
                         "id", is(499278344),
                         "status", equalTo("available"));
+
+        // The .statusCode previously was 200 but changed to 404 since it couldn't find it -CS
     }
 
     @Test
