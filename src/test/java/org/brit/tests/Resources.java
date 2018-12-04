@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 // Write down json paths here - CS
-public class Resources {
+public class Resources extends PetTests {
     protected static void setName(String glarester) {
     }
 
