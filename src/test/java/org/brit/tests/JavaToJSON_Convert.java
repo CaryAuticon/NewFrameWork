@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JavaToJSON_Convert extends Resources {
+public class JavaToJSON_Convert extends Resources extends TestClassJava_JSON {
 
     private static final Object Resources = org.brit.tests.Resources;
 
@@ -61,5 +61,5 @@ public class JavaToJSON_Convert extends Resources {
         return staff;
     }
 
-
+}
 }
