@@ -14,9 +14,9 @@ public class JavaToJSON_ConvertTest extends JavaToJSON_Convert {
         createDummyObject();
 
         // Attempting to call the code from JavaToJSON_Convert.java code: public static Resources createDummyObject() {    }
-
+    }
         @Test
-        public void SetId () {
+        public void SetId() {
             createDummyObject();
 
             // Attempting to call the code from JavaToJSON_Convert.java code: public static Resources createDummyObject() {    }
@@ -24,7 +24,7 @@ public class JavaToJSON_ConvertTest extends JavaToJSON_Convert {
         }
 
         @Test
-        public void SetPosition () {
+        public void SetPosition() {
             createDummyObject();
 
             // Attempting to call the code from JavaToJSON_Convert.java code: public static Resources createDummyObject() {    }
@@ -32,19 +32,19 @@ public class JavaToJSON_ConvertTest extends JavaToJSON_Convert {
         }
 
         @Test
-        public void SetExperience () {
-            createDummyObject();
+        public void SetExperience() {
+            //createDummyObject();
 
             // Attempting to call the code from JavaToJSON_Convert.java code: public static Resources createDummyObject() {    }
 
         }
 
         @Test
-        public void SetSkills () {
+        public void SetSkills() {
             createDummyObject();
 
             // Attempting to call the code from JavaToJSON_Convert.java code: public static Resources createDummyObject() {    }
 
         }
     }
-}
+
