@@ -33,7 +33,7 @@ public class JavaToJSON_ConvertTest extends JavaToJSON_Convert {
 
         @Test
         public void SetExperience() {
-            //createDummyObject();
+            createDummyObject();
 
             // Attempting to call the code from JavaToJSON_Convert.java code: public static Resources createDummyObject() {    }
 
