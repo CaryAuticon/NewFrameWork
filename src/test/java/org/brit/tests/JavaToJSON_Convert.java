@@ -1,65 +1,43 @@
 package org.brit.tests;
 
-
-
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
-public class JavaToJSON_Convert extends Resources {
+
+public class JavaToJSON_Convert {
 
     private static final Object Resources = org.brit.tests.Resources;
 
-    // I have little to no idea what the heck I'm doing.  Unsure of what Object Resources should be equal to. -CS
 
     public static void main(String[] args) {
-        JavaToJSON_Convert obj = new JavaToJSON_Convert();
-        obj.run();
-    }
 
-    private void run() {
+        @SuppressWarnings("deprecation")
+        Resources resources = new Resources(1, "John", "Doe", new Date(1981, 8, 18));
         ObjectMapper mapper = new ObjectMapper();
-        Resources staff = createDummyObject();
 
         try {
             mapper.writeValue(new File("/Users/user/rest-assured-example/src/test/java/org/brit/tests/Resources.java"), Resources);
-
-            String jsonInString =  mapper.writeValueAsString(staff);
-            System.out.println(jsonInString);
-
-            jsonInString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(staff);
-            System.out.println(jsonInString);
-
+        } catch (JsonGenerationException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-
         }
+    }
+
+
+
 
 
 
 
     }
 
-    public static Resources createDummyObject() {
-        Resources staff = new Resources();
-
-        staff.setName("Glarester");
-        staff.setId(30);
-        staff.setPosition("PetCareOwner");
-        staff.setExperience(new BigDecimal("7500"));
-
-        List<String> skills = new ArrayList<>();
-        skills.add("train");
-        skills.add("discipline");
-
-        staff.setSkills(skills);
-
-        return staff;
-    }
-
-}
 

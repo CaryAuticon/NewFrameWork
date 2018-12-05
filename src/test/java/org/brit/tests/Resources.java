@@ -1,24 +1,41 @@
 package org.brit.tests;
 
-import java.math.BigDecimal;
-import java.util.List;
+
+
+
+import java.util.Date;
+
 
 // Write down json paths here - CS
-public class Resources extends PetTests {
-    public static void setName(String glarester) {
-    }
+public class Resources {
 
-    public static void setId(int i) {
-    }
-
-    public static void setPosition(String PetCareOwner) {
-    }
-
-    public static void setExperience(BigDecimal bigDecimal) {
-    }
-
-    public static void setSkills(List<String> skills) {
-    }
 
     // These lines used to be protected static void [name] { ...  -CS
+
+    private Integer id;
+    private String firstName;
+    private String lastName;
+
+
+
+    public Resources(Integer id, String firstName, String lastName, Date birthDate) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+
+    }
+
+    //Getters and setters
+
+    @Override
+    public String toString() {
+        return "Employee [id=" + id + ", firstName=" + firstName + ", " + "lastName=" +  lastName + "]";
+
+    }
+
+
 }
+
+
+
+
