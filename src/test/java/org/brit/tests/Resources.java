@@ -5,18 +5,20 @@ import java.util.List;
 
 // Write down json paths here - CS
 public class Resources extends PetTests {
-    protected static void setName(String glarester) {
+    public static void setName(String glarester) {
     }
 
-    protected static void setId(int i) {
+    public static void setId(int i) {
     }
 
-    protected static void setPosition(String PetCareOwner) {
+    public static void setPosition(String PetCareOwner) {
     }
 
-    protected static void setExperience(BigDecimal bigDecimal) {
+    public static void setExperience(BigDecimal bigDecimal) {
     }
 
-    protected static void setSkills(List<String> skills) {
+    public static void setSkills(List<String> skills) {
     }
+
+    // These lines used to be protected static void [name] { ...  -CS
 }

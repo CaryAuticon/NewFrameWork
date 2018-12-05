@@ -44,7 +44,7 @@ public class JavaToJSON_Convert extends Resources {
 
     }
 
-    private static Resources createDummyObject() {
+    public static Resources createDummyObject() {
         Resources staff = new Resources();
 
         staff.setName("Glarester");
